@@ -94,10 +94,6 @@ body * {
   justify-content: end;
 }
 
-.light #switch button {
-  animation: slide-in 0.4s;
-}
-
 #switch span {
   display: block;
   width: 64px;

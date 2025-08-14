@@ -87,11 +87,18 @@ body * {
   border-radius: 50%;
   overflow: hidden;
   z-index: 1;
+
+  animation: slide-back .2s;
 }
 
 .light #switch {
   display: flex;
   justify-content: end;
+}
+
+#switch button:hover {
+outline: 8px solid var(--hight-light-color);
+
 }
 
 #switch span {
@@ -157,7 +164,7 @@ ul li a:hover {
 }
 
 #footer {
-  padding: 24px 0;
+  padding: 24px 250px;
   text-align: center;
   font-size: 14px;
 }
@@ -176,5 +183,10 @@ ul li a:hover {
 
 @keyframes slide-in{
 from { left: 0;}
-to { left: 100%;}
+to { left: 50%;}
+}
+
+@keyframes slide-back{
+  from {left: 50%;}
+  to {left: 0%}
 }

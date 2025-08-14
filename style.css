@@ -87,13 +87,15 @@ body * {
   border-radius: 50%;
   overflow: hidden;
   z-index: 1;
-  
-  animation: slide-in 0.4s;
 }
 
 .light #switch {
   display: flex;
   justify-content: end;
+}
+
+.light #switch button {
+  animation: slide-in 0.4s;
 }
 
 #switch span {

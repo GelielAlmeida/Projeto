@@ -1,12 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
-:root{
+:root {
   --text-color: white;
-  --bg-url:url(./assets/bg-mobile.jpg);
+  --bg-url: url(./assets/bg-mobile.jpg);
 
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
@@ -14,12 +13,11 @@
   --hight-light-color: rgba(0, 0, 0, 0.2);
   --switch-bg-url: url(assets/moon-stars.svg);
 }
-.light{
+.light {
   --text-color: black;
-  --bg-url:url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
 
-
-  --stroke-color:rgba(0, 0, 0, 0.5);
+  --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-houver: rgba(0, 0, 0, 0.02);
   --hight-light-color: rgba(0, 0, 0, 0.1);
@@ -27,14 +25,15 @@
 }
 
 body {
-  background:var(--bg-url) no-repeat top center /cover;
+  background: var(--bg-url) no-repeat top center / cover;
+  height: 100vh;
 }
 
 /* estou tentando colocar a cor: color:White (me ajude PEDRO DO TI) CONSEGUIIII */
 
-body *{
+body * {
   font-family: "Inter", sans-serif;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 #container {
@@ -45,10 +44,9 @@ body *{
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 56px auto 0px; 
+  margin: 56px auto 0px;
   gap: 10px;
   padding: 0 24px;
-
 }
 
 /*profile*/
@@ -57,7 +55,7 @@ body *{
   width: 112px;
 }
 
-#profile p{
+#profile p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -66,13 +64,13 @@ body *{
 
 /*switch*/
 
-#switch{
+#switch {
   position: relative;
-   margin: 4px auto;
-   display: flex;
-     display: block;
-     flex-direction: row;
-     align-items: center;
+  margin: 4px auto;
+  display: flex;
+  display: block;
+  flex-direction: row;
+  align-items: center;
   width: 64px;
   height: 24px;
   background: var(--surface-color);
@@ -81,7 +79,7 @@ body *{
   border-radius: 9999px;
 }
 
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
@@ -91,12 +89,12 @@ body *{
   z-index: 1;
 }
 
-.light #switch{
+.light #switch {
   display: flex;
   justify-content: end;
 }
 
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
@@ -108,7 +106,7 @@ body *{
 
 /* Links */
 
-ul{
+ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -116,7 +114,7 @@ ul{
   padding: 24px 0px;
 }
 
-ul li a{
+ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,16 +126,15 @@ ul li a{
   -webkit-backdrop-filter: blur(4px);
   text-decoration: none;
   font-weight: 500;
-  transition: background 0.5s
-
+  transition: background 0.5s;
 }
 /*pseudo-seletor*/
-ul li a:hover { 
-background: var(--surface-color-houver);
-border: 1px solid var(--text-color);
+ul li a:hover {
+  background: var(--surface-color-houver);
+  border: 1px solid var(--text-color);
 }
 
-#social-links{
+#social-links {
   display: flex;
   padding: 24px 0px;
   font-size: 24px;
@@ -154,12 +151,22 @@ border: 1px solid var(--text-color);
   border-radius: 50%;
 }
 
-#social-links a:hover{
+#social-links a:hover {
   background: var(--hight-light-color);
 }
 
-#footer{
+#footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }

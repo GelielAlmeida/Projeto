@@ -1,14 +1,7 @@
-<h1 align="center"> Projeto Geliel </h1>
+<h1 align="center"> Projeto Linktree </h1>
 
 <p align="center">
-Projeto construído com base no curso gratuito oferecido pela Rocketseat.
-</p>
-
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+Esse projeto foi construído com base no curso gratuito oferecido pela Rocketseat. 
 </p>
 
 <p align="center">
